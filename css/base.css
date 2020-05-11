@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 /* 요소(element) 여백 초기화  */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure, figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{word-wrap:break-word;margin:0;padding:0;border:0}
+*{padding: 0; margin: 0; word-break: keep-all; overflow-wrap: break-word; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:border-box; }
+button, html, input, textarea {font-size: 1em; line-height: 1.75; font-weight: 400;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 html {-webkit-text-size-adjust: none;} 
 
-body{color:#333; font-size:1em; font-family:'S-CoreDream','NanumGothic','나눔고딕',Gulim,'굴림',Dotum,'돋움',Sans-serif; letter-spacing:-0.3px; line-height:1.3;}
+body{color:#333; font-size:1em; font-family:'NanumGothic','나눔고딕',Gulim,'굴림',Dotum,'돋움',Sans-serif; letter-spacing:-1px; line-height:1.3;}
 a{color:inherit; text-decoration:none;}
-a:hover, a:active, a:focus {text-decoration:underline; }
+a:hover, a:active, a:focus {text-decoration:none; }
 img {border:0; vertical-align:top;}
 
 /* 목록 */
@@ -43,11 +44,6 @@ input:-webkit-autofill {background-color:transparent !important; -webkit-box-sha
 /* 전역클래스 */
 .blind{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
 .hidden {overflow:hidden; position:absolute; top:-10000em; height:0px; width:0px;}
-.dp_none {display:none !important;}
-.ta_l {text-align:left !important; }
-.ta_c {text-align:center !important; }
-.ta_r {text-align:right !important; }
-.va_m {vertical-align:middle !important;}
 
 /* area */
 .area:after{display:block; content:""; clear:both;}

@@ -2,4 +2,6 @@
 
 @import url("font_face.css");
 @import url("base.css");
+@import url("common.css");
+@import url("main.css");
 @import url("contents.css");

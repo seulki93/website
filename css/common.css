@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+html, body{ height: 100%; }
+
+/*header*/
+#header{height:110px; border-bottom:1px #ddd solid; box-sizing: border-box; position: relative;}
+#header .logo{position: absolute; top: 50%; transform: translateY(-50%);}
+#header .nav{text-align: right;}
+#header .gnb{display: inline-block; padding: 35px 0;}
+#header .gnb ul{display: inline-block;}
+#header .gnb ul>li{display: inline-block; margin-right:50px; font-size: 1.1em;}
+#header .gnb ul>li:last-child{margin-right: 0;}
+#header .gnb ul>li>a{display: block; padding: 5px 20px;}
+#header .gnb ul>li>a, #header .gnb ul>li>a:visited, #header .gnb ul>li>a:hover, #header .gnb ul>li>a:active{-webkit-backface-visibility:hidden; backface-visibility:hidden; position:relative; transition:0.5s color ease; text-decoration:none; color:#333;}
+#header .gnb ul>li>a:hover{color:#3474b7;}
+#header .gnb ul>li>a.before:before, #header .gnb ul>li>a.after:after{content: ""; transition:0.5s all ease; -webkit-backface-visibility:hidden; backface-visibility:hidden; position:absolute;font-weight: 600;}
+#header .gnb ul>li>a.before:before{top:-0.25em;}
+#header .gnb ul>li>a.after:after{bottom:-0.25em;}
+#header .gnb ul>li>a.before:before, #header .gnb ul>li>a.after:after{height:5px; height:0.35rem; width:0; background:#3474b7;}
+#header .gnb ul>li>a.third:after{left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+#header .gnb ul>li>a.before:hover:before, #header .gnb ul>li>a.after:hover:after{width:100%; }
+#header .gnb ul>li>a.on{color:#3474b7;}
+#header .gnb ul>li>a.on:after{height:5px; height:0.35rem; width:100%; background:#3474b7;}
+
+/*header*/
+
+/* wrap 1200px */
+.con-wrap{max-width:1200px; margin:0 auto;}
+/* wrap 1200px */
+
+/* footer */
+#footer{background:#011f4b; text-align:center; padding:50px 0; box-sizing: border-box;}
+#footer .footer-info{color:rgba(255,255,255,0.5); margin-top:20px;}
+#footer .footer-info ul li{display:inline-block; margin:0 5px;}
+#footer .footer-info ul li:first-child:after{content:""; display:inline-block; background:rgba(255,255,255,0.5); width:1px; height:10px; margin-left:15px;}
+/* footer */
+
+/* btn */
+.btn_box{color: #fff; margin: 10px 0; }
+.btn_center{text-align: center;}
+.btn_box span, .btn_box a{padding: 5px 20px; border-radius: 50px; font-size: 0.75em; letter-spacing: -1px; display: inline-block; margin-right:5px;}
+.btn_box span:last-child, .btn_box a:last-child{margin-right: 0;}
+.btn_box .btn_ds{background:#f76d6d;}
+.btn_box .btn_ps{background:#58668b;}
+.btn_box .btn_home{font-size: 1em; padding: 20px 80px 20px 50px; background: url(../images/btn_home_icon.png) top 50% right 20% no-repeat #1a2730;}
+.btn_box .btn_list{background: #222; font-size: 1em; padding: 20px 60px 20px 60px;}
+/* btn */
+
+
+@media screen and (max-width: 1024px) { 
+}
+
+@media screen and (max-width: 768px) { 
+    /*header*/
+    #header{}
+    #header .logo{left: 20px;}
+    #header .gnb ul>li{display: none;}
+    #header .nav{right: 20px;}
+    #header .nav nav.active { padding: 0 0 24px; width: 100%; position: absolute; left: 0; top: 110px; background: #fff; z-index: 1; height: 100vh;}
+    #header .nav nav.active a {}
+    #header .nav nav.active a:before { display: none;}
+    #header .nav nav.active ul{width: 100%;}
+    #header .nav nav.active ul>li>a{padding: 20px 0;}
+    #header .nav nav.active li {display: block; border-bottom: 1px solid #eee; width: 100%; text-align: center;}
+    #header .nav nav.active div { display: flex; border:1px solid #eee;}
+    
+    /* manu icon */
+    .menu-trigger{position:absolute; width:26px; height:21px; top: 45px; right: 20px;}
+    .menu-trigger, .menu-trigger span{display:inline-block; transition:all .4s; box-sizing:border-box;}
+    .menu-trigger span{position:absolute; left:0;width:100%; height:3px; background-color:#333; border-radius:4px;}
+    .menu-trigger span:nth-of-type(1){top:0;}
+    .menu-trigger span:nth-of-type(2){top:9px;}
+    .menu-trigger span:nth-of-type(3){bottom:0;}
+
+    .menu-trigger.active-1 span:nth-of-type(1){-webkit-transform:translateY(9px) rotate(-315deg); transform:translateY(9px) rotate(-315deg);}
+    .menu-trigger.active-1 span:nth-of-type(2){opacity:0;}
+    .menu-trigger.active-1 span:nth-of-type(3){-webkit-transform:translateY(-9px) rotate(315deg); transform:translateY(-9px) rotate(315deg);}
+    /* manu icon */
+    
+    /*header*/
+}
+
