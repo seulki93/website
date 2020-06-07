@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.scrollY{overflow-y: auto;max-height: 241px;}
+.scrollY10{overflow-y: auto;max-height: 482px;}
+.poin{cursor: pointer;}
+.es{position: relative;top: -3px;display: inline-block;}
+input[disabled="disabled"]{background: #f7f7f7;}
+.icon{margin: 0 10px 0 25px;font-size: 15px;font-weight: 800;}
+
+
+
+/* 모바일 qr */
+.mobile_qr{background:url(../images/bg_mobile_qr.png) center top 110px no-repeat; text-align:center;}
+.mobile_qr b{display:block; margin-bottom:15px; padding-top:310px; font-size:17px; color:#333; line-height:1.6;}
+.mobile_qr > span{font-size:12px; line-height:1.6;}
+.mobile_qr [class^="btn"]{display:block; width:294px; height:45px; margin:0 auto; margin-top:105px; background-color:#2b90d9; border-radius:5px; color:#fff; font-size:15px; line-height:45px;}
+
+/* 확인 팝업 */
+.pop_confirm{min-width:220px; margin-top:15px; padding-top:55px; background:url(../images/icon_confirm.png) center top no-repeat; text-align:center; font-size:16px; font-weight:bold;}
+
+#error_wrap{max-width: 900px; margin: 130px auto; padding: 110px 0; text-align: center; background-color: #2b90d9; border-radius: 43px; box-shadow: 10px 10px 15px rgba(0,0,0,0.2);}
+
+#error_wrap > .error_img{max-width: 240px; height: 194px; margin: 0 auto 55px auto; background: url(../images/error.png) bottom center no-repeat;}
+
+#error_wrap div>p{color: #ffffff; font-size: 14px; line-height: 22px; word-break:keep-all;}
+#error_wrap div>p:first-child{font-size: 24px; font-weight: 600; margin-bottom: 25px;}
+
+#error_wrap a{margin-top: 40px;}
+
+.icon_home{padding-left: 27px; background-image: url(../images/icon_home.png); background-position: left center;}
+
+@media screen and (max-width:1024px){
+    #error_wrap{max-width: 100vw; height: 100vh; margin: 0 auto; padding: 0; border-radius: 0;}
+    #error_wrap>.error_img{padding-top: 15vh; background-size:70%; margin-bottom: 4vh;}
+    #error_wrap div{padding: 0 2vh;}
+
+    #error_wrap div>p{font-size: 13px;}
+    #error_wrap div>p:first-child{line-height: 32px;  font-size:20px; margin-bottom: 2vh;}
+    
+    .icon{margin-left:0px;}
+}
+

@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<title>Layer popup</title>
+	<link rel="stylesheet" type="text/css" href="../css/import.css" />
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery.mtz.monthpicker.js"></script>
+    
+</head>
+<body>
+	<div class="w_inner">
+        <!-- h2 title -->
+        <h2 class="tit1">Layer popup</h2>
+        <!-- h2 title -->
+        <a href="" class="btn_sz_md btn_bg1 btn_layer" data-pop_name="layer_coll">배치하기</a>
+        <a href="" class="btn_sz_md btn_bg1 btn_layer" data-pop_name="layer_coll2">배치하기</a>
+        <a href="" class="btn_sz_md btn_bg2 btn_layer" data-pop_name="layer_time">시간설정</a>
+        <a href="" class="btn_sz_md btn_bg3 btn_layer" data-pop_name="layer_clerk">서기설정</a>
+
+        <a href="" class="btn_sz_md btn_bg1 btn_layer" data-pop_name="layer_school">학교검색</a>
+        <a href="" class="btn_sz_md btn_bg1 btn_layer btn_mini_popup" data-pop_name="layer_id_check">중복확인</a>
+        <a href="" class="btn_sz_md btn_bg1 btn_layer" data-pop_name="layer_step3_other">기타 서류 인증</a>
+        <a href="" class="btn_sz_md btn_bg1 btn_layer" data-pop_name="layer_payoff">POM 평가</a>
+        
+        <a href="" class="btn_sz_md btn_bg1 btn_layer btn_mini_popup" data-pop_name="layer_mini">미니팝업</a>
+        
+        <!-- 배치하기 -->
+        <div class="layer_popup layer_coll">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>모둠배치</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont">
+                        <div class="layer_mini_wrap">
+                            <p class="layer_sel_user"><b>이호두, 최자두, 박열매</b> 아래 모둠으로 배치합니다.</p>
+                            <div class="layer_group_sel layer_sel_full">
+                                <select id="" name="" title="모둠선택">
+                                    <option value="1">1모둠</option>
+                                </select>
+                            </div>
+                            <p class="error_text">지정한 인원을 초과하였습니다.</p>
+                        </div>
+                        <p class="btn_popup">
+                            <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                            <button type="button" class="btn_sz_md btn_ln1 btn_pop_close"><span class="icon_canc">취소</span></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //배치하기 -->
+
+        <!-- 배치하기 -->
+        <div class="layer_popup layer_coll2">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>모둠배치</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont">
+                        
+                        <div class="layer_mini_wrap">
+                            <p class="layer_sel_user"><b>이호두, 최자두, 박열매</b> 아래 모둠으로 배치합니다.</p>
+                            <div class="layer_group_sel layer_sel_half">
+                                <select id="" name="" title="모둠선택">
+                                    <option value="1">1모둠</option>
+                                </select>
+                                <select id="" name="" title="찬,반 선택">
+                                    <option value="1">찬성</option>
+                                    <option value="1">반대</option>
+                                </select>
+                            </div>
+                            <p class="error_text">지정한 인원을 초과하였습니다.</p>
+                        </div>
+                    </div>
+                    <p class="btn_popup">
+                        <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                        <button type="button" class="btn_sz_md btn_ln1 btn_pop_close"><span class="icon_canc">취소</span></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //배치하기 -->
+        
+        <!-- 시간설정 -->
+        <div class="layer_popup layer_time">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>시간설정</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont">
+                        <div class="layer_time_wrap">
+                            <div class="time_box_scroll">
+                                <ul>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                    <li><span>step 내용 출력</span> <input type="text" id="" name="" title="시간입력" /> 분</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="btn_popup">
+                        <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                        <button type="button" class="btn_sz_md btn_ln1 btn_pop_close"><span class="icon_canc">취소</span></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //시간설정 -->
+
+        <!-- 서기설정 -->
+        <div class="layer_popup layer_clerk">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>서기설정</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont">
+                        
+                        <div class="layer_mini_wrap">
+                            <p class="layer_sel_user"><b>이호두</b> 서기로 배치합니다.</p>
+                            <div class="layer_group_sel layer_sel_full">
+                                <select id="" name="" title="모둠선택">
+                                    <option value="1">1모둠</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="btn_popup">
+                        <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                        <button type="button" class="btn_sz_md btn_ln1 btn_pop_close"><span class="icon_canc">취소</span></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //서기설정 -->
+        
+        <!-- 설정에러 -->
+        <div class="layer_popup layer_mini">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>모둠배치</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont">
+                        
+                        <div class="set_error">
+                            <p>상세설정을 선택하세요!</p>
+                        </div>
+                        
+                        <p class="btn_popup">
+                            <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //설정에러 -->
+
+
+        <!-- 학교검색 -->
+        <div class="layer_popup layer_school">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>학교검색</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <div class="layer_cont"> 
+                        <div class="layer_school_wrap">
+                            <form>
+                                <fieldset>
+                                    <legend class="blind">학교검색</legend>
+                                        <div class="school_search_input"><input type="text" id="school_search" name="" title="검색어 입력" /></div>
+                                        <button type="button" class="btn_sz_sm btn_bg1" id="school" name="">검색</button>
+                                </fieldset>
+                            </form>
+                            <div class="school_box_scroll">
+                                <table class="tb_base" cellpadding="0" cellspacing="0">
+                                    <caption class="blind">학교검색의 학교명과 주소지 선택을 하여 주십시오.</caption>
+                                    <colgroup>
+                                        <col style="width:35%">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><strong>학교명</strong></th>
+                                            <th scope="col"><strong>주소지</strong></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="#">가나다라초등학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">가나다라중학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">가나다라고등학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">토토즐초등학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">토토즐중등학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">토토즐고등학교</a></th>
+                                            <td>
+                                                <a href="#">
+                                                충청북도 청주시 상당구 000로 00번길
+                                                <p>가나다라마학교</p>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //학교검색 -->
+
+
+        <!-- 중복확인 -->
+        <div class="layer_popup layer_id_check">
+                <div class="layer_wrap">
+                    <div class="layer_inner">
+                        <!-- popup_title --> 
+                        <div class="popup_title">
+                            <h1>모둠배치</h1>
+                            <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                        </div>
+                        <!-- //popup_title --> 
+                        
+                        <div class="layer_cont">
+                            
+                            <!-- 사용불가 -->
+                            <div class="id_check1">
+                                <p><strong>이미 사용중인 아이디입니다.</strong></p>
+                            </div>
+                            <!-- //사용불가 -->
+                            <!-- 사용가능 -->
+                            <div class="id_check2 dp_none">
+                                <p><strong>사용할 수 있는 아이디입니다.</strong></p>
+                            </div>
+                            <!-- //사용가능 -->
+                            
+                            <p class="btn_popup">
+                                <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- //중복확인 실패 -->
+
+
+
+        <!-- 교수자 기타 서류 인증 -->
+        <div class="layer_popup layer_step3_other">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>기타 서류 인증</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <form method="post" action=""  class="layer_cont">
+                        <div class="step3_popup_wrap">
+                            <div class="step3_popup_info">
+                                <ul>
+                                    <li>
+                                        <span>이름</span>
+                                        <span>이호두</span>
+                                    </li>
+                                    <li>
+                                        <span>직장</span>
+                                        <span>000중학교 재직</span>
+                                    </li>
+                                    <li>
+                                        <span>이메일</span>
+                                        <span>alksjd12@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filebox">
+                                <input type="text" disabled="disabled" placeholder="파일을 선택해주세요." id="file_name" name="" class="file_name" title="첨부된 파일"/>
+                                <label for="document_file" class="btn_sz_md btn_bg1"><b>찾아보기</b></label>
+                                <input type="file" id="document_file" class="btn_file">
+                                <p class="step3_popup_p">3MB 이하의 파일만 등록이 가능합니다.</p>
+                            </div>
+                            <ul class="step3_popup_guide">
+                                <li>* 증명서를 촬영할 경우 글씨가 명확히 보이는지 확인해 주세요.</li>
+                                <li>* 개인정보보호법 준수를 위하여 재직증명서의 표기된 주민등록번호는 가린 후 제출해 주십시오.</li>
+                                <li>* 규정에 따라 재직증명서 이외의 서류는 인증이 어려우니 양해 부탁드립니다.</li>
+                                <li>* 재직증명서를 촬영 및 스캔해서 첨부해주시면 됩니다. (JPG,PNG,PDF)</li>
+                                <li>* 수집된 정보는 인증 후 자동 폐기 되며 다른 용도로 사용되지 않습니다.</li>
+                            </ul>
+                            <p class="step3_popup_p">재직증명서로 교사인증을 할 경우 1~3일의 소요 될 수 있습니다.</p>
+                        </div>
+                        <p class="btn_popup">
+                            <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">확인</span></button>
+                            <button type="button" class="btn_sz_md btn_ln1 btn_pop_close"><span class="icon_canc">취소</span></button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- //교수자 기타 서류 인증 -->
+
+        <!-- POM 평가 -->
+        <div class="layer_popup layer_payoff">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- popup_title --> 
+                    <div class="popup_title">
+                        <h1>POM 평가</h1>
+                        <p class="btn_layer_close"><a href="#" class="btn_pop_close">닫기</a></p>
+                    </div>
+                    <!-- //popup_title --> 
+                    <form method="post" action="">
+                        <fieldset>
+                            <legend class="hidden">POM 평가</legend>
+                            <div class="layer_cont">
+                                <div class="layer_payoff">
+                                    <p>정기적으로 마을 청소하기</p>
+                                    <div class="payoff_input">
+                                        <dl>
+                                            <dt>효과/성과</dt>
+                                            <dd>
+                                                <label for="payoff_1_1"><input type="radio" id="payoff_1_1" name="payoff_1" > <span>1</span></label>
+                                                <label for="payoff_1_2"><input type="radio" id="payoff_1_2" name="payoff_1" > <span>2</span></label>
+                                                <label for="payoff_1_3"><input type="radio" id="payoff_1_3" name="payoff_1" > <span>3</span></label>
+                                                <label for="payoff_1_4"><input type="radio" id="payoff_1_4" name="payoff_1" > <span>4</span></label>
+                                                <label for="payoff_1_5"><input type="radio" id="payoff_1_5" name="payoff_1" > <span>5</span></label>
+                                                <label for="payoff_1_6"><input type="radio" id="payoff_1_6" name="payoff_1" > <span>6</span></label>
+                                                <label for="payoff_1_7"><input type="radio" id="payoff_1_7" name="payoff_1" > <span>7</span></label>
+                                                <label for="payoff_1_8"><input type="radio" id="payoff_1_8" name="payoff_1" > <span>8</span></label>
+                                                <label for="payoff_1_9"><input type="radio" id="payoff_1_9" name="payoff_1" > <span>9</span></label>
+                                                <label for="payoff_1_10"><input type="radio" id="payoff_1_10" name="payoff_1" > <span>10</span></label>
+                                            </dd>
+                                        </dl>
+
+                                        <dl>
+                                            <dt>노력/비용</dt>
+                                            <dd>
+                                                <label for="payoff_2_1"><input type="radio" id="payoff_2_1" name="payoff_2" > <span>1</span></label>
+                                                <label for="payoff_2_2"><input type="radio" id="payoff_2_2" name="payoff_2" > <span>2</span></label>
+                                                <label for="payoff_2_3"><input type="radio" id="payoff_2_3" name="payoff_2" > <span>3</span></label>
+                                                <label for="payoff_2_4"><input type="radio" id="payoff_2_4" name="payoff_2" > <span>4</span></label>
+                                                <label for="payoff_2_5"><input type="radio" id="payoff_2_5" name="payoff_2" > <span>5</span></label>
+                                                <label for="payoff_2_6"><input type="radio" id="payoff_2_6" name="payoff_2" > <span>6</span></label>
+                                                <label for="payoff_2_7"><input type="radio" id="payoff_2_7" name="payoff_2" > <span>7</span></label>
+                                                <label for="payoff_2_8"><input type="radio" id="payoff_2_8" name="payoff_2" > <span>8</span></label>
+                                                <label for="payoff_2_9"><input type="radio" id="payoff_2_9" name="payoff_2" > <span>9</span></label>
+                                                <label for="payoff_2_10"><input type="radio" id="payoff_2_10" name="payoff_2" > <span>10</span></label>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="btn_popup">
+                                <button type="button" class="btn_sz_md btn_bg1"><span class="icon_conf">평가</span></button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- //POM 평가 -->
+    </div>
+    
+    <!-- 레이어팝업 -->
+    <div class="layer_overlay"></div>
+    <!-- //레이어팝업 -->
+</body>
+</html>

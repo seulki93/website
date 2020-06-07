@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<title>Table</title>
+	<link rel="stylesheet" type="text/css" href="../css/import.css" />
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery.mtz.monthpicker.js"></script>
+    
+</head>
+<body>
+	<div class="w_inner">
+        <!-- h2 title -->
+        <h2 class="tit1">Table</h2>
+        <!-- h2 title -->
+        
+        <div class="mb30">
+            <!-- h3 title -->
+            <h3 class="tit2">Input_Table</h3>
+            <!-- h3 title -->
+            
+            <!-- input_table -->
+            <div class="input_table">
+                <table>
+                    <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:38%;" />
+                        <col style="width:12%;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>사번</th>
+                            <td><input type="text" /></td>
+                            <th>주민번호</th>
+                            <td>
+                                <span class="area_w2">
+                                    <input type="text" /> -
+                                    <input type="text" />
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핸드폰</th>
+                            <td>
+                                <span class="area_w3">
+                                    <input type="text" /> -
+                                    <input type="text" /> -
+                                    <input type="text" />
+                                </span>
+                            </td>
+                            <th>자격증</th>
+                            <td>
+                                <select>
+                                    <option value="">셀렉트1 </option>
+                                    <option value="">셀렉트2</option>
+                                    <option value="">셀렉트3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>급여계좌번호</th>
+                            <td><input type="text" class="icon_date datepicker" /></td>
+                            <th>부서</th>
+                            <td>
+                                <div class="input_button">
+                                    <input type="text" />
+                                    <button type="button" class="icon_search">검색</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>재직구분</th>
+                            <td colspan="3">
+                                <span class="date">
+                                    <input type="text" class="icon_date datepicker" />
+                                    ~
+                                    <input type="text" class="icon_date datepicker" />
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일</th>
+                            <td colspan="3">
+                                <div class="filebox">
+                                    <input class="upload-name" value="파일선택" disabled="disabled">
+                                    <label for="ex_filename">업로드</label>
+                                    <input type="file" id="ex_filename" class="upload-hidden">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>집주소</th>
+                            <td colspan="3"><input type="text" class="w100" /><input type="text" class="w100" /></td>
+                        </tr>
+                        <tr>
+                            <th>입사일</th>
+                            <td colspan="3"><textarea></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- input_table -->
+        </div>
+        
+        <div class="mb30">
+            <!-- title -->
+            <h3 class="tit2">View_Table</h3>
+            <!-- title -->
+            <!-- view_table -->
+            <div class="view_table">
+                <table>
+                    <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>사번</th>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <th>주민번호</th>
+                            <td>111111-1111111</td>
+                        </tr>
+                        <tr>
+                            <th>핸드폰</th>
+                            <td>010-1111-1111</td>
+                        </tr>
+                        <tr>
+                            <th>사번</th>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <th>주민번호</th>
+                            <td>111111-1111111</td>
+                        </tr>
+                        <tr>
+                            <th>핸드폰</th>
+                            <td>010-1111-1111</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- view_table -->
+        </div> 
+        
+        <div class="mb30">
+            <!-- title -->
+            <h3 class="tit2">List_table</h3>
+            <!-- title -->
+            <!-- list_table -->
+            <div class="list_table">
+                <table>
+                    <colgroup>
+                        <col style="width:10%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>사번</th>
+                            <th>성명</th>
+                            <th>주민번호</th>
+                            <th>직급</th>
+                            <th>부서</th>
+                            <th>성별</th>
+                            <th>재직구분</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>가나다</td>
+                            <td><a href="">111111-11111111</a></td>
+                            <td>사원</td>
+                            <td>디자인팀</td>
+                            <td>남</td>
+                            <td>
+                                <label for="che3">
+                                    <input type="checkbox" id="che3" name="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>가나다</td>
+                            <td>111111-11111111</td>
+                            <td>사원</td>
+                            <td>디자인팀</td>
+                            <td>남</td>
+                            <td>
+                                <label for="che4">
+                                    <input type="checkbox" id="che4" name="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>가나다</td>
+                            <td>111111-11111111</td>
+                            <td>사원</td>
+                            <td>디자인팀</td>
+                            <td>남</td>
+                            <td>
+                                <label for="che5">
+                                    <input type="checkbox" id="che5" name="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="value_change">
+                            <td>123456</td>
+                            <td>가나다</td>
+                            <td>111111-11111111</td>
+                            <td>사원</td>
+                            <td>디자인팀</td>
+                            <td>남</td>
+                            <td>
+                                <label for="che6">
+                                    <input type="checkbox" id="che6" name="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>가나다</td>
+                            <td>111111-11111111</td>
+                            <td>사원</td>
+                            <td>디자인팀</td>
+                            <td>남</td>
+                            <td>
+                                <label for="che7">
+                                    <input type="checkbox" id="che7" name="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- list_table -->
+        </div>
+        
+        <div class="mb30">
+            <!-- h3 title -->
+            <h3 class="tit2">Paging</h3>
+            <!-- h3 title -->
+            
+            <!-- paging_wrap -->
+            <div class="paging_wrap">
+                <p class="paging_box">
+                    <a href="#" class="page_prev">이전</a>
+                    <a href="#" class="now">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="page_next">다음</a>
+                </p>
+            </div>
+            <!-- paging_wrap -->            
+        </div>
+    </div>    
+</body>
+</html>

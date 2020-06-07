@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<title>Touch punch</title>
+	<link rel="stylesheet" type="text/css" href="../css/import.css" />
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/jquery.ui.touch-punch.min.js" ></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function () {
+
+        // 아이템 항목을 드래그 
+        $(".item_wrap span" ).draggable({
+          revert: "invalid", // 제대로 된 위치에 넣지 않으면 되돌아감 
+          containment: "document", // 드래그 할수 있는 영역 
+          helper: "clone", // 복제하면서 이동 
+          cursor: "move", // 마우스 포인터 
+          greedy: true,
+          classes: {
+            "ui-droppable": "highlight"
+          }
+        });
+
+        // 영역에 아이템을 놓으면
+        $('.drag_item').droppable({
+          drop: function( event, ui ) {
+            var $item = ui.draggable;
+            $item.appendTo( $(this));
+            //alert(event.target.id);
+          }
+        });
+
+        // 영역에서 아이템을 빼면 
+        $('.item_wrap').droppable({
+          drop: function( event, ui ) {
+            var $item = ui.draggable;
+            $item.appendTo( $('.item_wrap'));
+          }
+        });
+
+
+        /* 분류항목 추가 */
+        $('.category_set button.option_add').click(function(e){
+            var cate_count = $('.category_div > div').length + 1;
+            console.log(cate_count);
+
+            $('.category_div').append(''+
+                '<div class="gray_tit_box">'+
+                    '<p class="gray_title"> <span class="icon_state3">구분'+ cate_count +'</span> <input type="text" id="" name="" placeholder="분류제목 입력" /></p>'+
+                    '<div class="drag_item"> '+
+                    '</div>'+
+                '</div>');
+            $('.drag_item').droppable({
+                drop: function( event, ui ) {
+                var $item = ui.draggable;
+                $item.appendTo( $(this));
+              }
+            });
+        });
+
+        /* 분류항목 삭제 */
+        $('.category_set button.option_del').click(function(e){
+            var num = $('.category_div > div').length;
+            if(num<=2){
+                alert('더이상 줄일수 없습니다.');
+            }else{
+                $('.category_div > div:last').find('.drag_item span').appendTo($('.item_wrap'));
+                $('.category_div > div:last').remove();
+            }
+        });
+    });
+</script>
+
+</head>
+<body>
+	<div class="w_inner">
+        <!-- h2 title -->
+        <h2 class="tit1">Touch punch</h2>
+        <!-- h2 title -->
+        
+        <!-- 토론으로 분류하기 -->
+        <form method="post" action="">
+            <!-- 항목리스트 -->
+            <div class="category_item_box">
+                <p><span>각 항목을 끌어서 해당 구분 영역에 위치해 주세요!</span></p>
+                <div class="item_wrap">
+                    <span>1. 요리사</span>
+                    <span>2. 교사</span>
+                    <span>3. 소방관</span>
+                    <span>4. 간호사</span>
+                    <span>5. 경찰관</span>
+                    <span>6. 기자</span>
+                    <span>7. 농민</span>
+                    <span>8. 과학자(연구원)</span>
+                    <span>9. 회사원</span>
+                    <span>10. 군인</span>
+                </div>
+            </div>
+            <!-- //항목리스트 -->
+            <!-- 분류항목설정 -->
+            <p class="category_set">
+                <span>분류항목설정</span>
+                <button type="button" class="btn_sz_icon btn_bg1 option_add"><span class="icon_add">옵션추가</span></button>
+                <button type="button" class="btn_sz_icon btn_bg1 option_del"><span class="icon_del">옵션삭제</span></button>
+            </p>
+            <!-- //분류항목설정 -->
+
+            <!-- 분류향목 -->
+            <div class="flex_wrap category_div">
+                <div class="gray_tit_box">
+                    <p class="gray_title"> <span>구분1</span> <input type="text" id="" name="" placeholder="분류제목 입력" /></p>
+                    <div class="drag_item">
+
+                    </div>
+                </div>
+                <div class="gray_tit_box">
+                    <p class="gray_title"> <span>구분2</span> <input type="text" id="" name="" placeholder="분류제목 입력" /></p>
+                    <div class="drag_item">
+
+                    </div>
+                </div>
+                <div class="gray_tit_box">
+                    <p class="gray_title"> <span>구분3</span> <input type="text" id="" name="" placeholder="분류제목 입력" /></p>
+                    <div class="drag_item">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- //토론으로 분류하기-->
+        
+    </div>    
+</body>
+</html>
